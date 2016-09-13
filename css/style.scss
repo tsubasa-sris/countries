@@ -1,0 +1,195 @@
+@charset 'utf-8';
+@import 'compass';
+@import 'https://fonts.googleapis.com/css?family=Cinzel';
+
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// color
+$baseColor: #4E5166;
+$fontColor: #FFFFFF;
+$subColor: #93A8AC;
+
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em; 
+  background-color: $baseColor;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.cinzel{
+    font-family: 'cinzel', sans-serif;
+}
+
+header{
+    background-image:url(../images/pexels-photo.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 100%;
+        .site-title{
+            font-size: 1.8em;
+            padding-top: 15px;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+}
+
+@media(min-width: 769px){
+    header{
+        height: 500px;
+        .site-title{
+            font-size: 5rem;
+            padding-top: 22px;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@mixin countryBox{
+    background-size: cover;
+    background-position: center center;
+    padding: 30px;
+    font-size: 1.5rem;
+    min-height: 165px;
+}
+
+#countries{
+        padding: 20px;
+    h3{
+        padding-top: 10px;
+        padding-bottom: 8px;
+        font-size: 2.5rem;
+    }
+    .country{
+        padding: 15px;
+        @include display-flex;
+        justify-content: space-between;
+        @include flex-direction(column);
+    }
+    .country-box{
+        text-align: justify;
+        box-sizing: border-box;
+        padding:10px 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        h4{
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .singapore{
+            background-image:url(../images/singapore-d.jpg);
+            @include countryBox;
+        }
+        .australia{
+            background-image:url(../images/australia-d.jpg);
+            @include countryBox;
+        }
+        .england{
+            background-image:url(../images/england-d.jpg);
+            @include countryBox;
+        }
+        .canada{
+            background-image:url(../images/canada-d.jpg);
+            @include countryBox;
+        }
+        .vietnam{
+            background-image:url(../images/vietnam-d.jpg);
+            @include countryBox;
+        }
+        .turkey{
+            background-image:url(../images/turkey-d.jpg);
+            @include countryBox;
+        }
+    }
+}
+
+@media(min-width: 769px){
+    #countries{
+        h3{
+            font-size:3rem;
+        }
+        .country{
+            @include display-flex;
+            @include flex-direction(row);
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .country-box{
+                width: (100% / 3);
+                
+                padding: 10px 17px;
+                h4{
+                    font-size:2rem;
+                }
+                p{
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}
+
+
+.subscribe-btn{
+    margin-top: 20px;
+    background-color: $subColor;
+    height: 100px;
+    p{
+        padding-top: 20px;
+        padding-bottom: 7px;
+    }
+    a{
+        background-color: $baseColor;
+        display: block;
+        color: $fontColor;
+        text-decoration: none;
+        padding:5px;
+        border-radius: 3px;
+        margin: auto;
+        width: 180px;
+    }
+}
+
+@media (min-width: 769px){
+    .btn{
+        position: relative;
+        box-shadow: 0px 4px rgba(0,0,0,0.6);
+                    -webkit-box-shadow: 0px 4px rgba(0,0,0,0.6);
+                    -moz-box-shadow: 0px 4px rgba(0,0,0,0.6);
+    }
+    a:hover{
+        background-color: lighten($baseColor, 9%);
+        box-shadow: 0px 4px rgba(0,0,0,0.5);
+                    -webkit-box-shadow: 0px 4px rgba(0,0,0,0.5);
+                    -moz-box-shadow: 0px 4px rgba(0,0,0,0.5);
+    }
+    a:active{
+        top: 3px;
+        box-shadow: none;
+    }
+}
+
+footer{
+    background-color: $baseColor;
+    padding: 10px 0;
+    text-align: center
+}
+
+@media (max-width: 768px){
+    footer{
+        font-size: 1rem;
+    }
+}
