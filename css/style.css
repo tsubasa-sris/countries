@@ -62,7 +62,7 @@ header {
       margin-bottom: 8px;
       text-align: center; }
     #countries .country-box .singapore {
-      background-image: url(../images/singapore-d.jpg);
+      background-image: url(../images/singapore-d-min.jpg);
       background-size: cover;
       background-position: center center;
       padding: 30px;
@@ -83,21 +83,21 @@ header {
       font-size: 1.5rem;
       min-height: 165px; }
     #countries .country-box .canada {
-      background-image: url(../images/canada-d.jpg);
+      background-image: url(../images/canada-d-min.jpg);
       background-size: cover;
       background-position: center center;
       padding: 30px;
       font-size: 1.5rem;
       min-height: 165px; }
     #countries .country-box .vietnam {
-      background-image: url(../images/vietnam-d.jpg);
+      background-image: url(../images/vietnam-d-min.jpg);
       background-size: cover;
       background-position: center center;
       padding: 30px;
       font-size: 1.5rem;
       min-height: 165px; }
     #countries .country-box .turkey {
-      background-image: url(../images/turkey-d.jpg);
+      background-image: url(../images/turkey-d-min.jpg);
       background-size: cover;
       background-position: center center;
       padding: 30px;

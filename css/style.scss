@@ -91,7 +91,7 @@ header{
             text-align: center;
         }
         .singapore{
-            background-image:url(../images/singapore-d.jpg);
+            background-image:url(../images/singapore-d-min.jpg);
             @include countryBox;
         }
         .australia{
@@ -103,15 +103,15 @@ header{
             @include countryBox;
         }
         .canada{
-            background-image:url(../images/canada-d.jpg);
+            background-image:url(../images/canada-d-min.jpg);
             @include countryBox;
         }
         .vietnam{
-            background-image:url(../images/vietnam-d.jpg);
+            background-image:url(../images/vietnam-d-min.jpg);
             @include countryBox;
         }
         .turkey{
-            background-image:url(../images/turkey-d.jpg);
+            background-image:url(../images/turkey-d-min.jpg);
             @include countryBox;
         }
     }
